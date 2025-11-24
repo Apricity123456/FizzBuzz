@@ -10,3 +10,4 @@ Build and test with Maven:
 mvn -v
 mvn test
 ```
+[![CI](https://github.com/Apricity123456/FizzBuzz/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Apricity123456/FizzBuzz/actions/workflows/ci.yml)

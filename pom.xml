@@ -11,9 +11,10 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.release>17</maven.compiler.release>
+        <maven.compiler.release>21</maven.compiler.release>
         <junit.version>5.10.0</junit.version>
-        <cucumber.version>8.13.0</cucumber.version>
+        <cucumber.version>7.32.0</cucumber.version>
+        <junit4.version>4.13.2</junit4.version>
     </properties>
 
     <dependencies>
@@ -31,9 +32,27 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Cucumber dependencies removed temporarily to avoid resolution error.
-             Restore or set a valid Cucumber version after confirming availability
-             in Maven Central (or fix repository / proxy settings). -->
+        <!-- Cucumber JVM -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Cucumber JUnit (JUnit 4 runner) + JUnit4 to run it -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit4.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -56,6 +75,30 @@
                 <configuration>
                     <useModulePath>false</useModulePath>
                 </configuration>
+            </plugin>
+            <!-- Exec plugin to allow running Cucumber CLI directly -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>run-cucumber</id>
+                        <phase>test-compile</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>io.cucumber.core.cli.Main</mainClass>
+                            <classpathScope>test</classpathScope>
+                            <arguments>
+                                <argument>--glue</argument>
+                                <argument>org.example</argument>
+                                <argument>src/test/resources/features</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

@@ -47,10 +47,10 @@ Feature: FizzBuzz
     Given the input number is 12
     When I compute FizzBuzz
     Then the result should be "Fizz"
-  Scenario: 13 returns 13
+  Scenario: 13 returns Fizz
     Given the input number is 13
     When I compute FizzBuzz
-    Then the result should be "13"
+    Then the result should be "Fizz"
   Scenario: 14 returns 14
     Given the input number is 14
     When I compute FizzBuzz
@@ -87,10 +87,10 @@ Feature: FizzBuzz
     Given the input number is 22
     When I compute FizzBuzz
     Then the result should be "22"
-  Scenario: 23 returns 23
+  Scenario: 23 returns Fizz
     Given the input number is 23
     When I compute FizzBuzz
-    Then the result should be "23"
+    Then the result should be "Fizz"
   Scenario: 24 returns Fizz
     Given the input number is 24
     When I compute FizzBuzz
@@ -119,38 +119,38 @@ Feature: FizzBuzz
     Given the input number is 30
     When I compute FizzBuzz
     Then the result should be "FizzBuzz"
-  Scenario: 31 returns 31
+  Scenario: 31 returns Fizz
     Given the input number is 31
     When I compute FizzBuzz
-    Then the result should be "31"
-  Scenario: 32 returns 32
+    Then the result should be "Fizz"
+  Scenario: 32 returns Fizz
     Given the input number is 32
     When I compute FizzBuzz
-    Then the result should be "32"
+    Then the result should be "Fizz"
   Scenario: 33 returns Fizz
     Given the input number is 33
     When I compute FizzBuzz
     Then the result should be "Fizz"
-  Scenario: 34 returns 34
+  Scenario: 34 returns Fizz
     Given the input number is 34
     When I compute FizzBuzz
-    Then the result should be "34"
-  Scenario: 35 returns Buzz
+    Then the result should be "Fizz"
+  Scenario: 35 returns FizzBuzz
     Given the input number is 35
     When I compute FizzBuzz
-    Then the result should be "Buzz"
+    Then the result should be "FizzBuzz"
   Scenario: 36 returns Fizz
     Given the input number is 36
     When I compute FizzBuzz
     Then the result should be "Fizz"
-  Scenario: 37 returns 37
+  Scenario: 37 returns Fizz
     Given the input number is 37
     When I compute FizzBuzz
-    Then the result should be "37"
-  Scenario: 38 returns 38
+    Then the result should be "Fizz"
+  Scenario: 38 returns Fizz
     Given the input number is 38
     When I compute FizzBuzz
-    Then the result should be "38"
+    Then the result should be "Fizz"
   Scenario: 39 returns Fizz
     Given the input number is 39
     When I compute FizzBuzz
@@ -167,10 +167,10 @@ Feature: FizzBuzz
     Given the input number is 42
     When I compute FizzBuzz
     Then the result should be "Fizz"
-  Scenario: 43 returns 43
+  Scenario: 43 returns Fizz
     Given the input number is 43
     When I compute FizzBuzz
-    Then the result should be "43"
+    Then the result should be "Fizz"
   Scenario: 44 returns 44
     Given the input number is 44
     When I compute FizzBuzz
@@ -199,42 +199,42 @@ Feature: FizzBuzz
     Given the input number is 50
     When I compute FizzBuzz
     Then the result should be "Buzz"
-  Scenario: 51 returns Fizz
+  Scenario: 51 returns FizzBuzz
     Given the input number is 51
     When I compute FizzBuzz
-    Then the result should be "Fizz"
-  Scenario: 52 returns 52
+    Then the result should be "FizzBuzz"
+  Scenario: 52 returns Buzz
     Given the input number is 52
     When I compute FizzBuzz
-    Then the result should be "52"
-  Scenario: 53 returns 53
+    Then the result should be "Buzz"
+  Scenario: 53 returns FizzBuzz
     Given the input number is 53
     When I compute FizzBuzz
-    Then the result should be "53"
-  Scenario: 54 returns Fizz
+    Then the result should be "FizzBuzz"
+  Scenario: 54 returns FizzBuzz
     Given the input number is 54
     When I compute FizzBuzz
-    Then the result should be "Fizz"
+    Then the result should be "FizzBuzz"
   Scenario: 55 returns Buzz
     Given the input number is 55
     When I compute FizzBuzz
     Then the result should be "Buzz"
-  Scenario: 56 returns 56
+  Scenario: 56 returns Buzz
     Given the input number is 56
     When I compute FizzBuzz
-    Then the result should be "56"
-  Scenario: 57 returns Fizz
+    Then the result should be "Buzz"
+  Scenario: 57 returns FizzBuzz
     Given the input number is 57
     When I compute FizzBuzz
-    Then the result should be "Fizz"
-  Scenario: 58 returns 58
+    Then the result should be "FizzBuzz"
+  Scenario: 58 returns Buzz
     Given the input number is 58
     When I compute FizzBuzz
-    Then the result should be "58"
-  Scenario: 59 returns 59
+    Then the result should be "Buzz"
+  Scenario: 59 returns Buzz
     Given the input number is 59
     When I compute FizzBuzz
-    Then the result should be "59"
+    Then the result should be "Buzz"
   Scenario: 60 returns FizzBuzz
     Given the input number is 60
     When I compute FizzBuzz
@@ -287,10 +287,10 @@ Feature: FizzBuzz
     Given the input number is 72
     When I compute FizzBuzz
     Then the result should be "Fizz"
-  Scenario: 73 returns 73
+  Scenario: 73 returns Fizz
     Given the input number is 73
     When I compute FizzBuzz
-    Then the result should be "73"
+    Then the result should be "Fizz"
   Scenario: 74 returns 74
     Given the input number is 74
     When I compute FizzBuzz
@@ -327,10 +327,10 @@ Feature: FizzBuzz
     Given the input number is 82
     When I compute FizzBuzz
     Then the result should be "82"
-  Scenario: 83 returns 83
+  Scenario: 83 returns Fizz
     Given the input number is 83
     When I compute FizzBuzz
-    Then the result should be "83"
+    Then the result should be "Fizz"
   Scenario: 84 returns Fizz
     Given the input number is 84
     When I compute FizzBuzz

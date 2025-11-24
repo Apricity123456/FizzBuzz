@@ -1,4 +1,6 @@
 # FizzBuzz
+Shangyu Yang 
+
 
 Minimal Java 21 Maven project scaffold for FizzBuzz.
 

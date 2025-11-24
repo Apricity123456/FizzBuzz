@@ -11,6 +11,6 @@ public class FizzBuzz {
      */
     public static String compute(int n) {
         // TODO: implement FizzBuzz logic
-        return Integer.toString(n);
+        return "false";
     }
 }

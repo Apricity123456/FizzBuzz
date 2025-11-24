@@ -10,11 +10,7 @@ public class FizzBuzz {
      * @return placeholder string representation of n
      */
     public static String compute(int n) {
-        boolean fizz = (n % 3 == 0);
-        boolean buzz = (n % 5 == 0);
-        if (fizz && buzz) return "FizzBuzz";
-        if (fizz) return "Fizz";
-        if (buzz) return "Buzz";
-        return Integer.toString(n);
+        // Intentionally incorrect placeholder to generate failing tests
+        return "false";
     }
 }
